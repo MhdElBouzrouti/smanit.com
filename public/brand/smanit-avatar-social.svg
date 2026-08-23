@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1080" y2="1080">
+      <stop offset="0%" stop-color="#04060a"/>
+      <stop offset="50%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#030408"/>
+    </linearGradient>
+    <radialGradient id="centerAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.15"/>
+      <stop offset="40%" stop-color="#2563eb" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+    <linearGradient id="starGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a5f3fc"/>
+      <stop offset="50%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <filter id="neonGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Syne:wght@900&amp;display=swap');
+    .avatar-text {
+      font-family: 'Syne', 'Outfit', -apple-system, sans-serif;
+      font-weight: 900;
+      fill: #ffffff;
+      font-size: 580px;
+    }
+  </style>
+
+  <!-- Background Canvas -->
+  <rect width="1080" height="1080" fill="url(#bgGrad)"/>
+  <circle cx="540" cy="540" r="500" fill="url(#centerAura)"/>
+
+  <!-- Iconic Monogram "S" with Celestial Star -->
+  <text x="490" y="740" text-anchor="middle" class="avatar-text">S</text>
+
+  <!-- Signature 4-Point Star positioned at top-right of S -->
+  <g transform="translate(730, 320)" filter="url(#neonGlow)">
+    <path d="M 0 -85 L 18 -18 L 85 0 L 18 18 L 0 85 L -18 18 L -85 0 L -18 -18 Z" fill="url(#starGlow)"/>
+    <circle cx="0" cy="0" r="14" fill="#ffffff"/>
+  </g>
+</svg>
