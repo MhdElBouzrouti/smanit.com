@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" fill="none">
+  <defs>
+    <filter id="shadowGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Syne:wght@900&amp;display=swap');
+    .wm-text {
+      font-family: 'Syne', 'Outfit', -apple-system, sans-serif;
+      font-weight: 900;
+      fill: #ffffff;
+      font-size: 54px;
+      letter-spacing: 0.05em;
+    }
+    .wm-n {
+      font-family: 'Syne', 'Outfit', -apple-system, sans-serif;
+      font-weight: 900;
+      fill: #f59e0b;
+      font-size: 54px;
+    }
+  </style>
+
+  <!-- Monogram S N T -->
+  <text x="75" y="94" text-anchor="middle" filter="url(#shadowGlow)">
+    <tspan class="wm-text">S</tspan>
+    <tspan class="wm-n">N</tspan>
+    <tspan class="wm-text">T</tspan>
+  </text>
+
+  <!-- Checkpoint dot -->
+  <circle cx="75" cy="112" r="3" fill="#f59e0b" filter="url(#shadowGlow)"/>
+</svg>

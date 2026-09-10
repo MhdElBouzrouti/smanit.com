@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1584 396" fill="none">
+  <defs>
+    <linearGradient id="bannerBg" x1="0" y1="0" x2="1584" y2="396">
+      <stop offset="0%" stop-color="#030407"/>
+      <stop offset="50%" stop-color="#07090f"/>
+      <stop offset="100%" stop-color="#030407"/>
+    </linearGradient>
+    <radialGradient id="bannerAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.1"/>
+      <stop offset="50%" stop-color="#b45309" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Syne:wght@900&amp;display=swap');
+    .banner-title {
+      font-family: 'Syne', 'Outfit', -apple-system, sans-serif;
+      font-weight: 900;
+      fill: #ffffff;
+      font-size: 110px;
+      letter-spacing: 0.18em;
+    }
+    .banner-n {
+      font-family: 'Syne', 'Outfit', -apple-system, sans-serif;
+      font-weight: 900;
+      fill: #f59e0b;
+      font-size: 110px;
+    }
+    .banner-sub {
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 500;
+      fill: #64748b;
+      font-size: 14px;
+      letter-spacing: 0.45em;
+    }
+  </style>
+
+  <!-- Background -->
+  <rect width="1584" height="396" fill="url(#bannerBg)"/>
+  <ellipse cx="792" cy="198" rx="600" ry="180" fill="url(#bannerAura)"/>
+
+  <!-- Decision workflow lines & checkpoints -->
+  <line x1="200" y1="198" x2="520" y2="198" stroke="rgba(255,255,255,0.08)" stroke-dasharray="4 6" stroke-width="1.2"/>
+  <line x1="1064" y1="198" x2="1384" y2="198" stroke="rgba(255,255,255,0.08)" stroke-dasharray="4 6" stroke-width="1.2"/>
+
+  <circle cx="360" cy="198" r="4" fill="#f59e0b"/>
+  <circle cx="1224" cy="198" r="4" fill="#f59e0b"/>
+
+  <!-- SMANIT Logo with Amber N -->
+  <text x="792" y="210" text-anchor="middle">
+    <tspan class="banner-title">SMA</tspan>
+    <tspan class="banner-n">N</tspan>
+    <tspan class="banner-title">IT</tspan>
+  </text>
+
+  <rect x="768" y="226" width="48" height="3" rx="1.5" fill="#f59e0b"/>
+
+  <!-- Subtitle -->
+  <text x="792" y="272" text-anchor="middle" class="banner-sub">SMANIT.COM</text>
+</svg>

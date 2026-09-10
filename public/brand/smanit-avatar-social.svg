@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1080" y2="1080">
+      <stop offset="0%" stop-color="#040508"/>
+      <stop offset="50%" stop-color="#090b10"/>
+      <stop offset="100%" stop-color="#040508"/>
+    </linearGradient>
+    <radialGradient id="centerAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.12"/>
+      <stop offset="45%" stop-color="#b45309" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Syne:wght@900&amp;display=swap');
+    .avatar-text {
+      font-family: 'Syne', 'Outfit', -apple-system, sans-serif;
+      font-weight: 900;
+      fill: #ffffff;
+      font-size: 420px;
+      letter-spacing: 0.05em;
+    }
+    .avatar-n {
+      font-family: 'Syne', 'Outfit', -apple-system, sans-serif;
+      font-weight: 900;
+      fill: #f59e0b;
+      font-size: 420px;
+    }
+  </style>
+
+  <!-- Background Canvas -->
+  <rect width="1080" height="1080" fill="url(#bgGrad)"/>
+  <circle cx="540" cy="540" r="500" fill="url(#centerAura)"/>
+
+  <!-- Architectural Frame & Decision Circle -->
+  <circle cx="540" cy="540" r="380" stroke="rgba(255,255,255,0.06)" stroke-width="2" stroke-dasharray="8 8"/>
+  <circle cx="540" cy="540" r="396" stroke="rgba(245,158,11,0.2)" stroke-width="1.5"/>
+
+  <!-- Checkpoints -->
+  <circle cx="540" cy="144" r="7" fill="#f59e0b"/>
+  <circle cx="540" cy="936" r="7" fill="#f59e0b"/>
+  <circle cx="144" cy="540" r="5" fill="rgba(255,255,255,0.3)"/>
+  <circle cx="936" cy="540" r="5" fill="rgba(255,255,255,0.3)"/>
+
+  <!-- Centered Iconic Monogram S N T -->
+  <text x="320" y="680" text-anchor="middle" class="avatar-text">S</text>
+  <text x="540" y="680" text-anchor="middle" class="avatar-n">N</text>
+  <text x="760" y="680" text-anchor="middle" class="avatar-text">T</text>
+
+  <!-- Underline -->
+  <rect x="470" y="730" width="140" height="8" rx="4" fill="#f59e0b"/>
+</svg>
